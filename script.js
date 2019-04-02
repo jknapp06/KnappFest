@@ -3,7 +3,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 		var d = data.feed.entry;
 		var first = true;
 		var s = '';
-		var today = new Date(2019, 3, 20);
+		var today = new Date(2019, 4, 20);
 		var past = true;
 		$.each(d, function () {
 			if(past){

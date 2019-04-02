@@ -1,5 +1,5 @@
 body {
-	background-color: #e8c8b3;
+	background-color: #498cff;
 }
 
 h1 {
@@ -13,8 +13,8 @@ h1 {
 .card{
 	width: 100%;
 	margin: 2px;
-	background-color: #fff0f0;
-	color: #00ac8f;
+	background-color: #d1e1ff;
+	color: #394439;
 }
 
 .card-body{
@@ -22,7 +22,7 @@ h1 {
 }
 
 h5 {
-	color: #00ac8f;
+	color: #394439;
 }
 
 .vertical{
