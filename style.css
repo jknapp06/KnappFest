@@ -1,0 +1,62 @@
+body {
+	background-color: #e8c8b3;
+}
+
+h1 {
+	margin: 15px;
+}
+
+#schedule{
+	padding: 20px;
+}
+
+.card{
+	width: 100%;
+	margin: 2px;
+	background-color: #fff0f0;
+	color: #00ac8f;
+}
+
+.card-body{
+	padding-left: 10px;
+}
+
+h5 {
+	color: #00ac8f;
+}
+
+.vertical{
+    /* Abs positioning makes it not take up vert space */ 
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    float: right;
+
+    transform: rotate(270deg);
+	transform-origin: right bottom 0;
+
+	font-size: 30px;
+	opacity: 0.5;
+	padding: 0px;
+}
+
+.past{
+	display: none;
+}
+
+
+@media (min-width: 768px) {
+	.card{
+		width: 13%;
+		float: left;
+	}
+
+	.vertical{
+		visibility: hidden;
+	}
+
+	.past{
+		display: block;
+	}
+}
