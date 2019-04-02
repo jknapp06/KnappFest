@@ -3,7 +3,9 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 		var d = data.feed.entry;
 		var first = true;
 		var s = '';
-		var today = new Date(2019, 4, 20);
+		// Set today to be the 12 to get rid of empty
+		// place-holder rows.
+		var today = new Date(2019, 4, 12);
 		var past = true;
 		$.each(d, function () {
 			if(past){
@@ -15,7 +17,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 				var year = Number(aDate[2]);
 				var date = new Date(year, month, day);
 				console.log(date);
-				if(date > today.getDate()){
+				if(date.getDate() >= today.getDate()){
 					past = false;
 				}
 			}
