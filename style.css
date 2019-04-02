@@ -46,7 +46,7 @@ h5 {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.card{
 		width: 13%;
 		float: left;
