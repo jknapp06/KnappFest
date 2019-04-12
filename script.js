@@ -5,7 +5,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 		var s = '';
 		// Set today to be the 12 to get rid of empty
 		// place-holder rows.
-		var today = new Date(2019, 4, 12);
+		var today = new Date();
 		var past = true;
 		$.each(d, function () {
 			if(past){
