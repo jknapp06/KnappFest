@@ -34,11 +34,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 			}
 			s += '<div class="card-body"><h5 class="card-title">' 
 				+ this['gsx$date']['$t'] + '</h5>' 
-				+ '<p>' + this['gsx$morning']['$t'] + '</p>'
-				+ '<p>' + this['gsx$lunch']['$t'] + '</p>'
-				+ '<p>' + this['gsx$afternoon']['$t'] + '</p>'
-				+ '<p>' + this['gsx$dinner']['$t'] + '</p>'
-				+ '<p>' + this['gsx$evening']['$t'] + '</p>'
+				+ '<p>' + this['gsx$headline']['$t'] + '</p>'
 				+ '<p>' + this['gsx$notes']['$t'] + '</p></div>'
 				+ '<div class="vertical">' + this['gsx$day']['$t'] + '</div>'
 				+ '</div>';
