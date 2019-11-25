@@ -40,7 +40,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 			names.forEach(function(item, index, array){
 				if (this['gsx$'+item.toLowerCase()]['$t'] == "TRUE"){ 
 					badges += '<span class="badge badge-success">' + item + '</span>';
-				});
+				}});
 			
 			// Put together string for the record.
 			s += '<div class="card-body"><h5 class="card-title">' 
