@@ -17,8 +17,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 				var year = Number(aDate[2]);
 				var date = new Date(year, month, day);
 				console.log(date);
-				if(date.getMonth() > today.getMonth() 
-				   || (date.getMonth() == today.getMonth() && date.getDate() >= today.getDate()){
+				if(date.getMonth() > today.getMonth() || (date.getMonth() == today.getMonth() && date.getDate() >= today.getDate())){
 					past = false;
 				}
 			}
