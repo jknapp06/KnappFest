@@ -8,7 +8,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 		var today = new Date();
 		var past = true;
 		var badges = '';
-		var names = ['Mother', 'Father', 'Joey', 'Elizabeth', 'Patrick', 'Timothy'];
+		var names = ["Mother", "Father", "Joey", "Elizabeth", "Patrick", "Timothy"];
 		$.each(d, function () {
 			if(past){
 				var sDate = this['gsx$date']['$t'];
