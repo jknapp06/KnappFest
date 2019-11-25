@@ -12,7 +12,7 @@ h1 {
 
 .card{
 	width: 100%;
-	height: 300px;
+	height: 250x;
 	margin: 2px;
 	background-color: #d1e1ff;
 	color: #394439;
@@ -20,7 +20,20 @@ h1 {
 
 .christmas{
 	background-color: #146b37;
-	border: 2px dotted #de1e00;
+	border: 5px dotted #de1e00;
+	color: #FFFFFF
+}
+
+.mexican{
+	background-color: #FFFFFF;
+	border: 5px solid #00FF00;
+	color: #FF0000;
+}
+
+.hunukkah{
+	background-color: #5e9cff;
+	border: 5px dashed #f7e34d;
+	color: #FFFFFF;
 }
 
 .card-body{
@@ -55,7 +68,7 @@ h5 {
 @media (min-width: 992px) {
 	.card{
 		width: 13%;
-		height: 100px;
+		height: 150px;
 		float: left;
 	}
 
