@@ -27,10 +27,10 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 				first = false;
 			}
 			if(past){
-				s += '<div class="card past' + this['gsx$tags']['$t'] + '">';
+				s += '<div class="card past ' + this['gsx$tags']['$t'] + '">';
 			}
 			else{
-				s += '<div class="card' + this['gsx$tags']['$t'] + '">';
+				s += '<div class="card ' + this['gsx$tags']['$t'] + '">';
 			}
 			s += '<div class="card-body"><h5 class="card-title">' 
 				+ this['gsx$date']['$t'] + '</h5>' 
