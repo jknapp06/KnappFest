@@ -37,10 +37,15 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1_yOQokl_bl9lp2c-tp7jYUgkg
 			
 			// Availability badges
 			badges = '';
-			names.forEach(function(item, index, array){
-				if (this['gsx$'+item.toLowerCase()]['$t'] == "TRUE"){ 
-					badges += '<span class="badge badge-success">' + item + '</span>';
-				}});
+			var col = '';
+			for(var i = 0; i < names.length; i++){
+				col = 'gsx$'+names[i].toLowerCase();
+				console.log(col);
+				console.log(this[col]);
+				if (this[col]['$t'] == "TRUE"){ 
+					badges += '<span class="badge badge-success">' + names[i] + '</span> ';
+				}
+			}
 			
 			// Put together string for the record.
 			s += '<div class="card-body"><h5 class="card-title">' 
